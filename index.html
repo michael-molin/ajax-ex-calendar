@@ -21,20 +21,12 @@
                 <button class="btn-prev" disabled>Precedente</button>
                 <button class="btn-succ">Successivo</button>
             </div>
-            <div class="nome-giorni">
-                <ul>
-                    <li>Lun</li>
-                    <li>Mar</li>
-                    <li>Mer</li>
-                    <li>Gio</li>
-                    <li>Ven</li>
-                    <li>Sab</li>
-                    <li>Dom</li>
+            <div>
+                <ul class="nome-giorni">
                 </ul>
             </div>
             <div class="lista-giorni">
                 <ul class="ul-giorni">
-
                 </ul>
             </div>
         </div>
@@ -43,7 +35,7 @@
 
 
     <script id="calendario-template" type="text/x-handlebars-template">
-        <li class="giorno" data-giorno="{{dataGiorno}}">{{giorno}}</li>
+        <li class="giorno" data-giorno="{{dataGiorno}}" giorno-settimana="{{giornoSettimana}}">{{giorno}}<br></li>
     </script>
 
   </body>

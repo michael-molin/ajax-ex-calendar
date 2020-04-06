@@ -43,13 +43,14 @@ button:disabled {
     background-color: red;
 }
 
-span, .ul-giorni li {
+span, .ul-giorni li, .nome-giorni li {
     text-transform: capitalize;
 }
 
 .ul-giorni li {
     display: flex;
-    align-items:center;
+    padding-top: 20px;
+    line-height: 25px;
     justify-content: center;
 }
 
@@ -59,24 +60,19 @@ span, .ul-giorni li {
     list-style: none;
 }
 
-.nome-giorni ul {
+.nome-giorni {
     display: flex;
     list-style: none;
 }
 
-.nome-giorni ul li {
+.nome-giorni li {
     width: 100px;
-    border: 1px solid black;
-    border-top: none;
+    border-left: 1px solid black;
     text-align: center;
 }
 
 .nome-giorni li:first-child {
     border-left: none;
-}
-
-.nome-giorni li:last-child {
-    border-right: none;
 }
 
 .lista-giorni {
@@ -89,10 +85,19 @@ span, .ul-giorni li {
     width: 100px;
     height: 100px;
     text-align: center;
-    border: 1px solid black;
+    border-left: 1px solid black;
 }
+
 
 .giorno-vuoto {
     width: 100px;
     height: 100px;
+}
+
+.giorno, .giorno-vuoto, .nome-giorni li {
+    border-bottom: 1px solid black;
+}
+
+.giorno-vuoto li:last-child, .lista-giorni ul li:last-child, .ul-giorni li[giorno-settimana="7"] {
+    border-right: 1px solid black;
 }
