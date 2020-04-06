@@ -16,18 +16,83 @@
     margin-bottom: 30px;
 }
 
+.div-bottoni {
+    display:flex;
+    justify-content: space-around;
+    width: 30vw;
+    margin-bottom: 50px;
+}
+
 .container button {
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: blue;
     color: white;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    border: 1px solid grey;
+    color: lightgrey;
 }
 
 .rosso {
-    color: red;
+    background-color: red;
 }
 
 span, .ul-giorni li {
     text-transform: capitalize;
+}
+
+.ul-giorni li {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.ul-giorni {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nome-giorni ul {
+    display: flex;
+    list-style: none;
+}
+
+.nome-giorni ul li {
+    width: 100px;
+    border: 1px solid black;
+    border-top: none;
+    text-align: center;
+}
+
+.nome-giorni li:first-child {
+    border-left: none;
+}
+
+.nome-giorni li:last-child {
+    border-right: none;
+}
+
+.lista-giorni {
+    width: 700px;
+    max-height: 500px;
+
+}
+
+.giorno {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.giorno-vuoto {
+    width: 100px;
+    height: 100px;
 }
